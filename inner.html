@@ -5,7 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header class="header-top">
+    <header class="page-header">
       <div class="header-logo">
         <a class="logo"><img src="img/logo.png" alt="logo-Nerds" width="" height=""></a>
       </div>
@@ -28,104 +28,141 @@
       <div class="basket">
         <a href="#"><span class="icon-basket"></span>Корзина</a>
       </div>
-        <h1 class="title">
+        <h1 class="page-title">
          Магазин готовых шаблонов
         </h1>
     </header>
 
-    <main  class="catalog-wrapper">
-      <div class="column-left">
-          <form class="select-price">
-            <h3 class="range-caption">
-              Стоимость:
+    <main  class="page-content">
+      <div class="container">
+        <div class="column-left">
+            <form class="select-price" action="/">
+              <fieldset>
+                <legend class="range-caption">
+                  Стоимость:
+                </legend>
+                <div class="range-slider">
+                  <input type="range" name="range-one" min="0" max="15000" step="1000">
+                </div>
+                <div class="price-controls">
+      						 от <input class="price-min" type="text" value="0">
+                   до <input class="price-max" type="text" value="15000">
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend class="layout-caption">
+                  Сетка:
+                </legend>
+                  <input type="radio" name="layout" id="adaptive">
+                  <lable for="adaptive">Адаптивная</lable>
+                  <input type="radio" name="layout" id="fixed">
+                  <lable for="fixed">Фиксированная</lable>
+                  <input type="radio" name="layout" id="rubber">
+                  <lable for="rubber">Резиновая</lable>
+              </fieldset>
+              <fieldset>
+                <legend class="features-aption">
+                  Особенности
+                </legend>
+                  <input type="checkbox" name="slider" id="slider">
+                  <label for="slider">Слайдер</label>
+                  <input type="checkbox" name="advantage" id="advantage">
+                  <label for="advantage">Блок преимуществ</label>
+                  <input type="checkbox" name="news" id="news">
+                  <label for="news">Новости</label>
+                  <input type="checkbox" name="gallery" id="gallery">
+                  <label for="gallery">Галерея</label>
+                  <input type="submit" name="basket" id="basket" value="Корзина">
+                  <label for="basket">Корзина</label>
+              </fieldset>
+            </form>
+        </div>
+        <div class="column-right">
+          <ul class="catalog-navigation">
+            <li class="navigation-title">
+              <b>Сортировать:</b>
+            </li>
+            <li>
+              <a href="#" class="action">По цене</a>
+            </li>
+            <li>
+              <a href="#" class="action">По типу</a>
+            </li>
+            <li>
+              <a href="#" class="action">По названию</a>
+            </li>
+            <div class="arrows">
+              <a class="icon-down-arrows" href="#"></a>
+              <a class="icon-up-arrows" href="#"></a>
+            </div>
+          </ul>
+          <div class="product-card sedona">
+            <img src="img/" alt="sedona" width="100" height="100">
+            <h3>
+              Sedona
             </h3>
-            <div class="range-slider">
-              <input type="range" name="range-one" min="0" max="15000" step="1000">
-            </div>
-            <div class="price-controls">
-  						 от <input class="price-min" type="text" value="0">
-               до <input class="price-max" type="text" value="15000">
-            </div>
-          </form>
-          <form class="layout-type">
-            <h3 class="layout-caption">
-              Сетка:
-            </h3>
-            <div class="selection">
-              <input type="radio" name="layout" id="adaptive">
-              <lable for="adaptive"><span class="icon-circle"></span>Адаптивная</lable>
-            </div>
-            <div class="selection">
-              <input type="radio" name="layout" id="fixed">
-              <lable for="fixed"><span class="icon-circle"></span>Фиксированная</lable>
-            </div>
-            <div class="selection">
-              <input type="radio" name="layout" id="rubber">
-              <lable for="rubber"><span class="icon-circle"></span>Резиновая</lable>
-            </div>
-          </form>
-          <form class="features">
-            <h3 class="features-aption">
-              Особенности
-            </h3>
-            <div class="selection">
-              <input type="checkbox" name="slider" id="slider">
-              <label for="slider"><span class="icon-checkbox-on"></span>Слайдер</label>
-            </div>
-            <div class="selection">
-              <input type="checkbox" name="advantage" id="advantage">
-              <label for="advantage"><span class="icon-checkbox-on"></span>Блок преимуществ</label>
-            </div>
-            <div class="selection">
-              <input type="checkbox" name="news" id="news">
-              <label for="news"><span class="icon-checkbox-on"></span>Новости</label>
-            </div>
-            <div class="selection">
-              <input type="checkbox" name="gallery" id="gallery">
-              <label for="gallery"><span class="icon-checkbox-on"></span>Галерея</label>
-            </div>
-            <div class="selection">
-              <input type="checkbox" name="basket" id="basket">
-              <label for="basket"><span class="icon-checkbox-on"></span>Корзина</label>
-            </div>
-          </form>
-      </div>
-      <div class="column-right">
-        <ul class="catalog-navigation">
-          <li class="navigation-title">
-            <b>Сортировать:</b>
-          </li>
-          <li>
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По названию</a>
-          </li>
-          <div class="arrows">
-            <a class="icon-down-arrows" href="#"></a>
-            <a class="icon-up-arrows" href="#"></a>
+            <p>
+              Информационный сайт
+              для туристов
+            </p>
+            <a class="card-btn sedona" href="#"></a>
           </div>
-        </ul>
-        <div class="producr-card">
-          <img src="img/" alt="sedona" width="100" height="100">
-        </div>
-        <div class="producr-card">
-          <img src="img/logo.png" alt="pink" width="100" height="100">
-        </div>
-        <div class="producr-card">
-          <img src="img/" alt="borodinski" width="100" height="100">
-        </div>
-        <div class="producr-card">
-          <img src="img/" alt="mishka" width="100" height="100">
-        </div>
-        <div class="producr-card">
-          <img src="img/" alt="A+" width="100" height="100">
-        </div>
-        <div class="producr-card">
-          <img src="img/" alt="Кваст" width="100" height="100">
+          <div class="product-card pink">
+            <img src="img/logo.png" alt="pink" width="100" height="100">
+            <h3>
+              pink
+            </h3>
+            <p>
+              Устали от серости мегаполиса?
+              Нам есть, что Вам предложить!
+            </p>
+            <a class="card-btn pink" href="#"></a>
+          </div>
+          <div class="product-card borodinski">
+            <img src="img/" alt="borodinski" width="100" height="100">
+            <h3>
+              borodinski
+            </h3>
+            <p>
+              Стрижка у нас
+              это выгодно!
+            </p>
+            <a class="card-btn borodinski" href="#"></a>
+          </div>
+          <div class="product-card mishka">
+            <img src="img/" alt="mishka" width="100" height="100">
+            <h3>
+              mishka
+            </h3>
+            <p>
+              Милые штучки ручной
+              работы для дома
+            </p>
+            <a class="card-btn mishka" href="#"></a>
+          </div>
+          <div class="product-card A+">
+            <img src="img/" alt="A+" width="100" height="100">
+            <h3>
+              A+
+            </h3>
+            <p>
+              Учеба еще никогда
+              не была такой
+              интересной!
+            </p>
+            <a class="card-btn a+" href="#"></a>
+          </div>
+          <div class="product-card kvast">
+            <img src="img/" alt="Кваст" width="100" height="100">
+            <h3>
+              Кваст
+            </h3>
+            <p>
+              Крафтовый квас
+              всему голова!
+            </p>
+            <a class="card-btn kvast" href="#"></a>
+          </div>
         </div>
       </div>
       <ul class="paginaion">
@@ -160,16 +197,20 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="page-footer">
       <div class="social">
-        <a class="social-btn" href="#">Вконтакте</a>
-        <a class="social-btn" href="#">Фейсбук</a>
-        <a class="social-btn" href="#">Инстаграм</a>
+        <a class="social-btn vk" href="#">Вконтакте</a>
+        <a class="social-btn fb" href="#">Фейсбук</a>
+        <a class="social-btn inst" href="#">Инстаграм</a>
       </div>
-      <h3>Давайте дружить, это выгодно!</h3>
-      <p class="footer">
-        Скидка 10% для друзей из социальных сетей.
-      </p>
+      <div class="footer-text">
+        <b>
+          Давайте дружить, это выгодно!
+        </b>
+        <p>
+          Скидка 10% для друзей из социальных сетей.
+        </p>
+      </div>
     <footer>
   </body>
 </html>
