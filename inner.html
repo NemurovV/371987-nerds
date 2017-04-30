@@ -8,37 +8,41 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="header-logo">
-        <a class="logo"><img src="img/nerds-logo.png" alt="Nerds" width="160" height="64"></a>
+      <div class="container clearfix">
+        <div class="header-top">
+          <nav class="main-navigation">
+            <a class="header-logo" href="#">
+              <img src="img/nerds-logo.png" alt="Nerds" width="160" height="64">
+            </a>
+            <ul class="nav-list">
+              <li>
+                <a href="#">Студия</a>
+              </li>
+              <li>
+                <a href="#">Клиенты</a>
+              </li>
+              <li>
+                <a class="active" href="#">Магазин</a>
+              </li>
+              <li>
+                <a href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="basket">
+            <a href="#"><span class="icon-basket"></span>Корзина</a>
+          </div>
+            <h1 class="header-page-title">
+             Магазин готовых шаблонов
+            </h1>
+        </div>
       </div>
-      <nav class="main-navigation">
-        <ul class="nav-list">
-          <li>
-            <a href="#">Студия</a>
-          </li>
-          <li>
-            <a href="#">Клиенты</a>
-          </li>
-          <li>
-            <a class="active" href="#">Магазин</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="basket">
-        <a href="#"><span class="icon-basket"></span>Корзина</a>
-      </div>
-        <h1 class="page-title">
-         Магазин готовых шаблонов
-        </h1>
     </header>
 
     <main  class="page-content">
-      <div class="container">
+      <div class="container clearfix">
         <div class="column-left">
-            <form class="select-price" action="/">
+            <form class="select-price" action="/" method="get">
               <fieldset>
                 <legend class="range-caption">
                   Стоимость:
@@ -55,27 +59,27 @@
                 <legend class="layout-caption">
                   Сетка:
                 </legend>
-                  <input type="radio" name="layout" id="adaptive">
-                  <lable for="adaptive">Адаптивная</lable>
-                  <input type="radio" name="layout" id="fixed">
-                  <lable for="fixed">Фиксированная</lable>
-                  <input type="radio" name="layout" id="rubber">
-                  <lable for="rubber">Резиновая</lable>
+                    <input type="radio" name="layout" id="adaptive">
+                    <lable for="adaptive">Адаптивная</lable>
+                    <input type="radio" name="layout" id="fixed">
+                    <lable for="fixed">Фиксированная</lable>
+                    <input type="radio" name="layout" id="rubber">
+                    <lable for="rubber">Резиновая</lable>
               </fieldset>
               <fieldset>
                 <legend class="features-aption">
                   Особенности
                 </legend>
-                  <input type="checkbox" name="slider" id="slider">
-                  <label for="slider">Слайдер</label>
-                  <input type="checkbox" name="advantage" id="advantage">
-                  <label for="advantage">Блок преимуществ</label>
-                  <input type="checkbox" name="news" id="news">
-                  <label for="news">Новости</label>
-                  <input type="checkbox" name="gallery" id="gallery">
-                  <label for="gallery">Галерея</label>
-                  <input type="submit" name="basket" id="basket" value="Корзина">
-                  <label for="basket">Корзина</label>
+                    <input type="checkbox" name="slider" id="slider">
+                    <label for="slider">Слайдер</label>
+                    <input type="checkbox" name="advantage" id="advantage">
+                    <label for="advantage">Блок преимуществ</label>
+                    <input type="checkbox" name="news" id="news">
+                    <label for="news">Новости</label>
+                    <input type="checkbox" name="gallery" id="gallery">
+                    <label for="gallery">Галерея</label>
+                    <input type="submit" name="basket" id="basket" value="Корзина">
+                    <label for="basket">Корзина</label>
               </fieldset>
             </form>
         </div>
@@ -93,11 +97,11 @@
             <li>
               <a href="#" class="action">По названию</a>
             </li>
-            <div class="arrows">
-              <a class="icon-down-arrows" href="#"></a>
-              <a class="icon-up-arrows" href="#"></a>
-            </div>
           </ul>
+            <div class="arrows">
+              <a class="icon-down-arrow" href="#"></a>
+              <a class="icon-up-arrow" href="#"></a>
+            </div>
           <div class="product-card sedona">
             <img src="img/img-sedona.jpg" alt="sedona" width="360" height="576">
             <h3>
@@ -126,8 +130,8 @@
               Barbershop
             </h3>
             <p>
-              Сайт салоны красоты.
-              Для мужчин, да.
+              Сайт салона красоты.
+              Для мужчин, да.
             </p>
             <a class="card-btn barbershop" href="#"></a>
           </div>
@@ -165,53 +169,61 @@
             <a class="card-btn kvast" href="#"></a>
           </div>
         </div>
+
+        <ul class="paginaion">
+          <li>
+            <a class="btn-page page-active" href="#">1</a>
+          </li>
+          <li>
+            <a class="btn-page" href="#">2</a>
+          </li>
+          <li>
+            <a class="btn-page" href="#">3</a>
+          </li>
+          <li>
+            <a class="btn-page" href="#">Следующая</a>
+          </li>
+        </ul>
       </div>
-      <ul class="paginaion">
-        <li>
-          <a class="btn-page page-active" href="#">1</a>
-        </li>
-        <li>
-          <a class="btn-page" href="#">2</a>
-        </li>
-        <li>
-          <a class="btn-page" href="#">3</a>
-        </li>
-        <li>
-          <a class="btn-page" href="#">Следующая</a>
-        </li>
-      </ul>
-      <div class="map">
-        <div class="feedback-wrapper">
-          <h3>
-            Nerds desing studio
-          </h3>
-          <p>
-            191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p>
-            тел. +7 (812) 275-75-75
-          </p>
-        </div>
-        <div name="map"><img src="img/map.png" width="1440" height="785" alt="Интерактивная карта  Nerds">
+
+      <div class="layout-positioner">
+        <div class="map">
+          <div class="feedback-wrapper">
+            <h3>
+              Nerds desing studio
+            </h3>
+            <p>
+              191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+              тел. +7 (812) 275-75-75
+            </p>
+          </div>
+          <a class="btn" href="/">Напиши нам</a>
+          <div class="custom-map">
+            <img src="img/map-small.jpg" width="1440" height="417" alt="Интерактивная карта  Nerds">
+          </div>
         </div>
       </div>
     </main>
 
-    <footer class="page-footer">
-      <div class="social">
-        <a class="social-btn vk" href="#">Вконтакте</a>
-        <a class="social-btn fb" href="#">Фейсбук</a>
-        <a class="social-btn inst" href="#">Инстаграм</a>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <section class="footer-social">
+          <a class="social-btn vk" href="#">Вконтакте</a>
+          <a class="social-btn fb" href="#">Фейсбук</a>
+          <a class="social-btn inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-text">
+          <b>
+            Давайте дружить, это выгодно!
+          </b>
+          <p>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
+        </section>
       </div>
-      <div class="footer-text">
-        <b>
-          Давайте дружить, это выгодно!
-        </b>
-        <p>
-          Скидка 10% для друзей из социальных сетей.
-        </p>
-      </div>
-    <footer>
+    </footer>
   </body>
 </html>
