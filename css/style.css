@@ -108,13 +108,16 @@ body {
 }
 
 .product-card {
-  float: right;
+  float: left;
+  width: 360px;
+  margin-right: 40px;
+}
+
+.product-card:nth-child(2n) {
+  margin-right: 0;
 }
 
 .paginaion {
-  width: 446px;
-  height: 50px;
-  margin: 0 auto;
   background-color: rgba(61, 248, 18, 0.2);
 }
 
@@ -193,6 +196,13 @@ a {
   width: 760px;
   background-color: rgba(61, 248, 18, 0.2);
 }
+.right-filters span {
+  float: left;
+}
+
+.catalog-navigation {
+  float: left;
+}
 
 .arrows {
   float: right;
@@ -224,6 +234,7 @@ a {
 }
 
 .definition  {
+  float: left;
   width: 700px;
   height: 471px;
   margin-bottom: 45px;
