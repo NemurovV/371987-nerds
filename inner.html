@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
         <div class="header-top clearfix">
-          <a class="logo" href="#">
+          <a class="logo" href="index.html">
             <img src="img/nerds-logo.png" alt="Nerds" width="160" height="64">
           </a>
           <nav class="main-navigation">
@@ -32,7 +33,7 @@
           <div class="basket">
             <a href="#"><span class="icon-basket"></span>Корзина</a>
           </div>
-            <h1 class="header-page-title">
+            <h1>
              Магазин готовых шаблонов
             </h1>
         </div>
@@ -43,33 +44,54 @@
       <div class="catalog clearfix">
         <div class="column-left">
             <form class="select-price" action="/" method="get">
-              <fieldset>
-                <legend class="range-caption">
+
+              <div class="range-caption">
+                <span>
                   Стоимость:
-                </legend>
-                <div class="range-slider">
-                  <input type="range" name="range-one" min="0" max="15000" step="1000">
+                </span>
+              </div>
+              <div class="range-filters">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar">
+                      <div class="toggle toggle-min">
+
+                      </div>
+                      <div class="toggle toggle-max">
+
+                      </div>
+                    </div>
+                  </div>
                 </div>
                 <div class="price-controls">
-      						 от <input class="price-min" type="text" value="0">
-                   до <input class="price-max" type="text" value="15000">
+                  <label class="price-min">
+        					  от <input class="price-min" type="text" name="price-min" value="0">
+                  </label>
+                  <label class="price-max">
+                    до <input class="price-max" type="text" name="price-max" value="15000">
+                 </label>
                 </div>
-              </fieldset>
-              <fieldset>
-                <legend class="layout-caption">
-                  Сетка:
-                </legend>
+              </div>
+
+              <div class="filters-layout">
+                <div class="layout-caption">
+                  <span>
+                    Сетка:
+                  </span>
+                </div>
                     <input type="radio" name="layout" id="adaptive">
                     <lable for="adaptive">Адаптивная</lable>
                     <input type="radio" name="layout" id="fixed">
                     <lable for="fixed">Фиксированная</lable>
                     <input type="radio" name="layout" id="rubber">
                     <lable for="rubber">Резиновая</lable>
-              </fieldset>
-              <fieldset>
-                <legend class="features-aption">
-                  Особенности
-                </legend>
+              </div>
+              <div class="filters-features">
+                <div class="features-aption">
+                  <span>
+                    Особенности
+                  </span>
+                </div>
                     <input type="checkbox" name="slider" id="slider">
                     <label for="slider">Слайдер</label>
                     <input type="checkbox" name="advantage" id="advantage">
@@ -80,7 +102,7 @@
                     <label for="gallery">Галерея</label>
                     <input type="submit" name="basket" id="basket" value="Корзина">
                     <label for="basket">Корзина</label>
-              </fieldset>
+              </div>
             </form>
         </div>
         <div class="column-right">
@@ -100,21 +122,23 @@
               </li>
             </ul>
             <div class="arrows">
-              <a class="icon-down-arrow" href="#">1</a>
-              <a class="icon-up-arrow" href="#" >2</a>
+              <a class="icon-down-arrow" href="#"></a>
+              <a class="icon-up-arrow" href="#" ></a>
             </div>
           </div>
           <div class="catalog-items clearfix">
             <div class="product-card sedona">
               <img src="img/img-sedona.jpg" alt="sedona" width="360" height="576">
-              <h3>
-                Sedona
-              </h3>
-              <p>
-                Информационный сайт
-                для туристов
-              </p>
-              <a class="card-btn sedona" href="#"></a>
+              <div class="sedona-text">
+                <h3>
+                  Sedona
+                </h3>
+                <p>
+                  Информационный сайт
+                  для туристов
+                </p>
+                <a class="card-btn sedona" href="#"></a>
+              </div>
             </div>
             <div class="product-card pink">
               <img src="img/img-pink.jpg" alt="pink" width="360" height="576">
