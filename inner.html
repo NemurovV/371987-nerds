@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -44,21 +44,18 @@
       <div class="catalog clearfix">
         <div class="column-left">
             <form class="select-price" action="/" method="get">
-
               <div class="range-caption">
-                <span>
+                <b>
                   Стоимость:
-                </span>
+                </b>
               </div>
               <div class="range-filters">
                 <div class="range-controls">
                   <div class="scale">
                     <div class="bar">
                       <div class="toggle toggle-min">
-
                       </div>
                       <div class="toggle toggle-max">
-
                       </div>
                     </div>
                   </div>
@@ -75,50 +72,52 @@
 
               <div class="filters-layout">
                 <div class="layout-caption">
-                  <span>
+                  <b>
                     Сетка:
-                  </span>
+                  </b>
                 </div>
-                    <input type="radio" name="layout" id="adaptive">
-                    <lable for="adaptive">Адаптивная</lable>
-                    <input type="radio" name="layout" id="fixed">
-                    <lable for="fixed">Фиксированная</lable>
-                    <input type="radio" name="layout" id="rubber">
-                    <lable for="rubber">Резиновая</lable>
+                  <input type="radio" name="radio" id="adaptive" value="adaptive" checked>
+                  <label for="adaptive">Адаптивная</label>
+                  <input type="radio" name="radio" id="fixed" value="fixed">
+                  <label for="fixed">Фиксированная</label>
+                  <input type="radio" name="radio" id="layout" value="layout">
+                  <label for="layout">Резиновая</label>
               </div>
               <div class="filters-features">
                 <div class="features-aption">
-                  <span>
+                  <b>
                     Особенности
-                  </span>
+                  </b>
                 </div>
-                    <input type="checkbox" name="slider" id="slider">
+                    <input type="checkbox" checked name="slider" id="slider" disabled>
                     <label for="slider">Слайдер</label>
                     <input type="checkbox" name="advantage" id="advantage">
                     <label for="advantage">Блок преимуществ</label>
-                    <input type="checkbox" name="news" id="news">
+                    <input type="checkbox" checked name="news" id="news" disabled>
                     <label for="news">Новости</label>
                     <input type="checkbox" name="gallery" id="gallery">
                     <label for="gallery">Галерея</label>
-                    <input type="submit" name="basket" id="basket" value="Корзина">
+                    <input type="checkbox" name="basket" id="basket" value="Корзина">
                     <label for="basket">Корзина</label>
               </div>
+              <input type="submit" name="btn" value="Показать">
             </form>
+
         </div>
         <div class="column-right">
           <div class="right-filters clearfix">
-            <span>
+            <b>
               Сортировать:
-            </span>
+            </b>
             <ul class="catalog-navigation">
               <li>
-                <a href="#" class="action">По цене</a>
+                <a class="active" href="#">По цене</a>
               </li>
               <li>
-                <a href="#" class="action">По типу</a>
+                <a href="#">По типу</a>
               </li>
               <li>
-                <a href="#" class="action">По названию</a>
+                <a href="#">По названию</a>
               </li>
             </ul>
             <div class="arrows">
@@ -127,9 +126,14 @@
             </div>
           </div>
           <div class="catalog-items clearfix">
-            <div class="product-card sedona">
+            <div class="product-card sedona ">
+              <div class="catalog-slider-controls">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
               <img src="img/img-sedona.jpg" alt="sedona" width="360" height="576">
-              <div class="sedona-text">
+              <div class="popup-card active">
                 <h3>
                   Sedona
                 </h3>
@@ -137,67 +141,102 @@
                   Информационный сайт
                   для туристов
                 </p>
-                <a class="card-btn sedona" href="#"></a>
+                <a class="card-btn sedona" href="#"><span>9 900 руб.</span></a>
               </div>
             </div>
             <div class="product-card pink">
+              <div class="catalog-slider-controls">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
               <img src="img/img-pink.jpg" alt="pink" width="360" height="576">
-              <h3>
-                Pink App
-              </h3>
-              <p>
-                Продуктовый лендинг
-                приложения для iOS и Android
-              </p>
-              <a class="card-btn pink" href="#"></a>
+              <div class="popup-card">
+                <h3>
+                  Pink App
+                </h3>
+                <p>
+                  Продуктовый лендинг
+                  приложения для iOS и Android
+                </p>
+                <a class="card-btn pink" href="#"><span>9 900 руб.</span></a>
+              </div>
             </div>
             <div class="product-card barbershop">
+              <div class="catalog-slider-controls">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
               <img src="img/img-barbershop.jpg" alt="barbershop" width="360" height="576">
-              <h3>
-                Barbershop
-              </h3>
-              <p>
-                Сайт салона красоты.
-                Для мужчин, да.
-              </p>
-              <a class="card-btn barbershop" href="#"></a>
+              <div class="popup-card">
+                <h3>
+                  Barbershop
+                </h3>
+                <p>
+                  Сайт салона красоты.
+                  Для мужчин, да.
+                </p>
+                <a class="card-btn barbershop" href="#"><span>9 900 руб.</span></a>
+            </div>
             </div>
             <div class="product-card mishka">
+              <div class="catalog-slider-controls">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
               <img src="img/img-mishka.jpg" alt="mishka" width="360" height="576">
-              <h3>
-                Mishka
-              </h3>
-              <p>
-                Интернет-магазин
-                вязаных игрушек
-              </p>
-              <a class="card-btn mishka" href="#"></a>
+              <div class="popup-card">
+                <h3>
+                  Mishka
+                </h3>
+                <p>
+                  Интернет-магазин
+                  вязаных игрушек
+                </p>
+                <a class="card-btn mishka" href="#"><span>9 900 руб.</span></a>
+              </div>
             </div>
             <div class="product-card a-plus">
+              <div class="catalog-slider-controls">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
               <img src="img/img-aplus.jpg" alt="A Plus" width="360" height="576">
-              <h3>
-                A Plus
-              </h3>
-              <p>
-                Лендинг курсов повышения
-                квалификации
-              </p>
-              <a class="card-btn a-plus" href="#"></a>
+              <div class="popup-card">
+                <h3>
+                  A Plus
+                </h3>
+                <p>
+                  Лендинг курсов повышения
+                  квалификации
+                </p>
+                <a class="card-btn a-plus" href="#"><span>9 900 руб.</span></a>
+              </div>
             </div>
             <div class="product-card kvast">
+              <div class="catalog-slider-controls">
+                <i></i>
+                <i></i>
+                <i></i>
+              </div>
               <img src="img/img-kvast.jpg" alt="kvast" width="360" height="576">
-              <h3>
-                Кваст
-              </h3>
-              <p>
-                Промо-сайт производителя
-                крафтового кваса
-              </p>
-              <a class="card-btn kvast" href="#"></a>
+              <div class="popup-card">
+                <h3>
+                  Кваст
+                </h3>
+                <p>
+                  Промо-сайт производителя
+                  крафтового кваса
+                </p>
+                <a class="card-btn kvast" href="#"><span>9 900 руб.</span></a>
+            </div>
             </div>
           </div>
-          <div class="paginaion">
-              <a class="btn-page page-active" href="#">1</a>
+          <div class="pagination">
+              <a class="btn-page active" href="#">1</a>
               <a class="btn-page" href="#">2</a>
               <a class="btn-page" href="#">3</a>
               <a class="btn-page" href="#">Следующая</a>
@@ -243,6 +282,8 @@
           </p>
         </section>
       </div>
+      </div>
     </footer>
   </body>
+  <script src="https://use.fontawesome.com/d66e519e2f.js"></script>
 </html>
