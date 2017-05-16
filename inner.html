@@ -282,8 +282,29 @@
           </p>
         </section>
       </div>
+      <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть
+        </button>
+        <h2 class="modal-content-title">
+          Напишите нам
+        </h2>
+        <form class="text-form" action="" method="post">
+          <div class="username">
+            <label for="username"><b>Ваше имя:</b></label>
+            <input type="text" name="username" id="username" placeholder="Представтесь, пожалуйста" pattern="[А-Яа-яЁё]" required autofocus>
+          </div>
+          <div class="e-mail">
+            <label for="email"><b>Ваш e-mail:</b></label>
+            <input type="email" name="email" id="email" placeholder="Для отправки ответа" pattern="^[a-zA-Z]+$" required>
+          </div>
+          <div class="report-title">
+            <label for="report"><b>Текст письма:</b></label>
+            <textarea id="report" name="report" rows="5" placeholder="В свободной форме"></textarea>
+          </div>
+         <a class="btn" href="#">Отправить</a>
+      </div>
       </div>
     </footer>
+    <script src="https://use.fontawesome.com/d66e519e2f.js"></script>
   </body>
-  <script src="https://use.fontawesome.com/d66e519e2f.js"></script>
 </html>

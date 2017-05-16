@@ -16,7 +16,7 @@ body {
 .main-header {
   min-height: 499px;
   margin-bottom: 80px;
-  padding-top: 38px;
+  padding-top: 40px;
 
   background-color: rgb(238, 238, 238);
 }
@@ -44,12 +44,12 @@ a.logo:active {
   display: inline-block;
 
   width: 1160px;
-  height: 65px;
+  max-height: 65px;
 }
 
 .main-navigation {
   float: left;
-  width: 660px;
+  max-width: 660px;
   margin-left: 160px;
 
   text-transform: uppercase;
@@ -110,9 +110,7 @@ a.logo:active {
 
 .basket {
   float: right;
-  max-height: 160px;
-
-  text-transform: uppercase;
+  max-width: 160px;
 }
 
 .basket a {
@@ -124,6 +122,7 @@ a.logo:active {
 
   vertical-align: top;
   text-decoration: none;
+  text-transform: uppercase;
 
   color: rgb(0, 0, 0);
 }
@@ -224,6 +223,8 @@ a.logo:active {
 }
 
 .sliders-title {
+  margin: 0;
+  padding: 0;
   font-size: 55px;
   line-height: 55px;
   font-family: "Roboto" , sans-serif;
@@ -234,7 +235,7 @@ a.logo:active {
 
 .sliders-text p {
   display: inline-block;
-  padding-top: 12px;
+  padding-top: 11px;
 }
 
 .slider img {
@@ -274,7 +275,7 @@ a.logo:active {
   top: 292px;
   left: 0px;
 
-  display: inline-block;
+  display: block;
   padding: 18px 55px 15px 55px;
 
   font-size: 16px;
@@ -283,6 +284,7 @@ a.logo:active {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  word-wrap: break-word;
 
   color: rgb(255, 255,255);
   background-color: rgb(251, 86, 90);
@@ -309,7 +311,7 @@ a.logo:active {
 
 .advertising {
   float: left;
-  width: 1160px;
+  min-width: 1160px;
   margin-bottom: 120px;
 }
 
@@ -331,7 +333,7 @@ a.logo:active {
 
   float: left;
   width: 300px;
-  height: 349px;
+  min-height: 349px;
   margin-right: 100px;
 }
 
@@ -340,6 +342,9 @@ a.logo:active {
 }
 
 .advertising-item h2 {
+  margin: 0;
+  margin-top: 19px;
+  padding: 0px;
   font-size: 24px;
   line-height: 30px;
   font-family: "Roboto" , sans-serif;
@@ -350,8 +355,10 @@ a.logo:active {
 }
 
 .advertising-item p {
-  position: absolute;
-  bottom: 68px;
+  margin: 0;
+  margin-top: 16px;
+  padding: 0;
+
 
   font-size: 16px;
   line-height: 24px;
@@ -362,11 +369,14 @@ a.logo:active {
 }
 
 .advertising-item .btn {
-  position: absolute;
-  top: auto;
-  bottom: 0px;
-  padding-left: 40px;
-  padding-right: 40px;
+  margin: 0;
+  margin-top: 5px;
+  padding: 14px 40px;
+
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Roboto" , sans-serif;
+  font-weight: 500;
 }
 
 .application .btn {
@@ -448,8 +458,12 @@ a.logo:active {
 }
 
 .definition-text {
-  position: absolute;
-  top: 143px;
+  /*position: absolute;
+  top: 143px;*/
+  margin: 0;
+  margin-top: -12px;
+
+  padding: 0;
 
   font-size: 16px;
   line-height: 24px;
@@ -461,7 +475,11 @@ a.logo:active {
 
 .definition h3 {
   position: relative;
-  top: 74px;
+
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+
 
   font-size: 16px;
   line-height: 24px;
@@ -473,12 +491,17 @@ a.logo:active {
 }
 
 .definition-list {
-  position: absolute;
-  top: 269px;
-  left: -3px;
+  position: relative;
+  display: inline-block;
+  /*top: 269px;
+  left: -3px;*/
+  margin: 0;
+  margin-top: -4px;
+  margin-left: 37px;
+  padding: 16px 0;
 
   font-size: 16px;
-  line-height: 45px;
+  line-height: 48px;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   list-style: none;
@@ -490,10 +513,10 @@ a.logo:active {
   content: "";
 
   position: absolute;
-  top: 20px;
-  left: 3px;
+  top: 40px;
+  left: -35px;
 
-  width: 25px;
+  width: 24px;
   height: 2px;
 
   background-color: rgb(251, 86, 90);
@@ -503,10 +526,10 @@ a.logo:active {
   content: "";
 
   position: absolute;
-  top: 67px;
-  left: 3px;
+  top: 88px;
+  left: -35px;
 
-  width: 25px;
+  width: 24px;
   height: 2px;
 
   background-color: rgb(251, 86, 90);
@@ -516,27 +539,28 @@ a.logo:active {
   content: "";
 
   position: absolute;
-  bottom: 72px;
-  left: 1px;
+  bottom: 70px;
+  left: 0px;
 
-  width: 25px;
+  width: 24px;
   height: 2px;
 
   background-color: rgb(251, 86, 90);
 }
 
 .warranty  {
-  position: relative;
+  /*position: relative;*/
   float: right;
   width: 360px;
-  height: 471px;
+  min-height: 471px;
   margin-right: 0px;
 }
 
 .warranty h3 {
-  position: absolute;
-  top: 229px;
-  left: 16px;
+  margin: 0;
+  margin-top: 30px;
+  margin-left: 17px;
+  padding: 0;
 
   font-size: 16px;
   line-height: 24px;
@@ -548,19 +572,25 @@ a.logo:active {
 }
 
 .our-level {
-  position: absolute;
-  top: 310px;
-  left: -40px;
+  position: relative;
+
   width: 120px;
 
   list-style: none;
 }
 
 .our-level b {
+  display: inline-block;
+  margin: 0;
+  margin-top: 24px;
+  margin-left: -40px;
+  padding: 0;
+
   font-size: 45px;
-  line-height: 11px;
+  line-height: 45px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  list-style: none;
 
   color: rgb(0, 0, 0);
 }
@@ -575,6 +605,11 @@ a.logo:active {
 }
 
 .our-level p {
+  width: 98px;
+  margin: 0;
+  margin-top: 18px;
+  margin-left: -39px;
+  padding: 0;
   font-size: 16px;
   line-height: 20px;
   font-family: "Roboto", sans-serif;
@@ -639,43 +674,43 @@ a.logo:active {
   padding-top: 10px;
 }
 
-.img-brand:nth-child(1)::before {
+.warranty::before {
   content: "";
 
   position: absolute;
-  bottom: 34px;
-  left: 279px;
+  bottom: -962px;
+  left: 448px;
 
   width: 2px;
   height: 53px;
 
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(228, 228, 228);
 }
 
-.img-brand:nth-child(2)::before {
+.our-level::before {
   content: "";
 
   position: absolute;
-  bottom: 20px;
-  left: 261px;
+  bottom: -193px;
+  left: -220px;
 
-  width: 2px;
+  width: 3px;
   height: 53px;
 
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(228, 228, 228);
 }
 
-.img-brand:nth-child(3)::after {
+.our-level::after {
   content: "";
 
   position: absolute;
-  bottom: 36px;
-  right: -35px;
+  bottom: -193px;
+  right: 80px;
 
   width: 2px;
   height: 53px;
 
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(228, 228, 228);
 }
 
 .layout-positioner {
@@ -751,7 +786,7 @@ a.logo:active {
 .footer-social {
   float: left;
   width: 280px;
-  height: 80px;
+  min-height: 80px;
   margin-top: 60px;
   margin-right: 40px;
   margin-bottom: 65px;
@@ -779,7 +814,6 @@ a.logo:active {
 .social-btn:active {
   background: rgb(215, 55, 59) url("../img/sprite.png") no-repeat center;
   border-radius: 50%;
-  /*text-shadow: inset 0 15px 15px 15px rgba(231, 66, 70, 0.7);*/
   box-shadow: inset 0 20px 20px 50px rgba(231, 66, 70, 0.7);
 }
 
@@ -799,7 +833,7 @@ a.logo:active {
   display: inline-block;
   float: left;
   width: 620px;
-  height: 80px;
+  min-height: 80px;
   margin-top: 57px;
   margin-left: 80px;
  }
@@ -820,7 +854,7 @@ a.logo:active {
    display: inline-block;
    margin: 0;
    padding: 0;
-   padding-top: 10px;
+   padding-top: 9px;
 
    font-size: 16px;
    line-height: 22px;
@@ -1277,10 +1311,10 @@ a.logo:active {
   position: relative;
 
   float: left;
-  width: 360px;
+  max-width: 360px;
   margin-right: 40px;
   margin-bottom: 30px;
-  border-top: 41px solid rgb(233, 233, 233);
+  border-top: 41px solid rgb(233, 233, 233); /*посмотреть тени!!!*/
   border-radius: 5px;
   cursor: pointer;
 }
@@ -1303,8 +1337,8 @@ a.logo:active {
   display: none;
   margin: 0;
   padding: 0;
-  width: 360px;
-  height: 231px;
+  max-width: 360px;
+  min-height: 231px;
 
   background-color: rgb(238, 238, 238);
 }
@@ -1365,11 +1399,9 @@ a.logo:active {
 }
 
 .card-btn {
-  position: absolute;
-  bottom: 45px;
-  left: 82px;
-
   display: inline-block;
+  margin-top: 32px;
+  margin-left: 81px;
   padding: 16px 60px;
 
   font-size: 16px;
